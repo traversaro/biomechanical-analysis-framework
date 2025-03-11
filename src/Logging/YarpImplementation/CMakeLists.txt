@@ -5,9 +5,9 @@ if(FRAMEWORK_COMPILE_YarpImplementation)
     NAME                   TextLoggingYarpImplementation
     SOURCES                src/YarpLogger.cpp
     PUBLIC_HEADERS         include/BiomechanicalAnalysis/Logging/YarpLogger.h
-    PUBLIC_LINK_LIBRARIES  BiomechanicalAnalysis::Logging 
-                           BipedalLocomotion::TextLoggingYarpImplementation
-                           YARP::YARP_os
+    PRIVATE_LINK_LIBRARIES  BiomechanicalAnalysis::Logging 
+                            BipedalLocomotion::TextLoggingYarpImplementation
+                            YARP::YARP_os
     INSTALLATION_FOLDER    Logging)
 
 endif()

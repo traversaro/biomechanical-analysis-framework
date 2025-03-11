@@ -91,7 +91,7 @@ install_basic_package_files(${PROJECT_NAME}
                             TARGETS_PROPERTY BiomechanicalAnalysisFramework_TARGETS
                             VARS_PREFIX ${PROJECT_NAME}
                             NO_CHECK_REQUIRED_COMPONENTS_MACRO
-                            DEPENDENCIES ${FRAMEWORK_PUBLIC_DEPENDENCIES}
+                            DEPENDENCIES iDynTree Eigen3 BipedalLocomotionFramework
                             PRIVATE_DEPENDENCIES ${FRAMEWORK_PRIVATE_DEPENDENCIES})
 
 
